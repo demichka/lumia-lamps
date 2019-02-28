@@ -1,8 +1,7 @@
 import React from 'react';
 import {
-  Container,
-  Row,
-  Col
+  Input,
+  Form
 } from 'reactstrap';
 
 export default class Search extends React.Component {
@@ -18,14 +17,17 @@ export default class Search extends React.Component {
 
  render() {
    return (
-     <form>
-       <input
-         placeholder="Search for..."
+     <Form>
+       <Input
+       className="flex-sm-fill text-sm-center nav-link"
+       type="text"
+       id="search"
+         placeholder="Type to search"
          ref={input => this.search = input}
          onChange={this.handleInputChange}
        />
        <p>{this.state.query}</p>
-     </form>
+     </Form>
    )
  }
 }
