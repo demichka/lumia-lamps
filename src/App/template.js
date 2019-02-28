@@ -7,6 +7,7 @@ import StartPage from '../StartPage/index';
 
 
 
+
 export default function () {
   return <Router>
     <div className="App page corners padding transp">
@@ -15,7 +16,7 @@ export default function () {
       </header>
       <main className="mt-5">
         <Route exact path="/" component={StartPage} />
-        <Route path="/contact-page" component={ContactPage} />
+        <Route path="/contact-page" component={ContactPage} />       
 
       </main>
       {/* <Footer /> */}
